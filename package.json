@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "vite": "^8.1.1"
+  },
+  "name": "js-tutorials",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node src/index.js"
+  },
+  "version": "0.0.0"
+}
