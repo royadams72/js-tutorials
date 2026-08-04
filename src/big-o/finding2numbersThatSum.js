@@ -1,3 +1,5 @@
+// Find the 2 numbers that adds up to the sum number
+// e.g. arr1:[2, 4, 6, 8], sum: 14 = 6 and 8
 function hasPairWithSum2(arr1, sum) {
   const mySet = new Set();
   const len = arr1.length;
