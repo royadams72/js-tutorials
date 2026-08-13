@@ -75,6 +75,26 @@ class MyLinkedList {
     return this;
   }
 
+  reverse() {
+    if (!this.head.next) {
+      return this.head;
+    }
+    let first = this.head;
+    this.tail = this.head; // The head will become the tail
+    let second = first.next;
+    while (second) {
+      const temp = second.next; // save where I'm going - this is the 3rd item
+      second.next = first; // turn the arrow around - second now points to first
+      first = second; // move first backward
+      second = temp; // move third up to second, thus moving second backward
+    }
+    // this happens at the end
+    this.head.next = null; // Tail and head are the same, updating this.head is updating the tail
+    this.head = first; // Then we point the head to the final iteration of the first var which is now at the beginning
+    this.printList();
+    return this;
+  }
+
   remove(index) {
     if (index >= this.length || index <= 0) {
       return console.log("index is out of range");
@@ -113,4 +133,4 @@ myList.append(7);
 myList.append(6);
 myList.prepend(10);
 myList.printList();
-// myList.remove(2);
+myList.reverse();

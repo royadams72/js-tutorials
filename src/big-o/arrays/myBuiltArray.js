@@ -20,7 +20,7 @@ class MyArray {
 
   shiftItems(index) {
     // We start from the item we've deleted i = index
-    // because we've deleted an item we use "this.length - 1" as we want to leave the lase item alone
+    // because we've deleted an item we use "this.length - 1" as we want to leave the last item alone
     // as it should not exist anymore
     for (let i = index; i < this.length - 1; i++) {
       this.data[i] = this.data[i + 1];

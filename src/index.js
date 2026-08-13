@@ -7,5 +7,5 @@
 // import "./big-o/hashFunction.js";
 // import "./big-o/findFirstRecurringNumber.js";
 // import "./big-o/linked-lists/firstLinkedList.js";
-import "./big-o/linked-lists/doublyLinkedList.js";
-// import "./big-o/linked-lists/myLinkedList.js";
+// import "./big-o/linked-lists/doublyLinkedList.js";
+import "./big-o/linked-lists/myLinkedList.js";
