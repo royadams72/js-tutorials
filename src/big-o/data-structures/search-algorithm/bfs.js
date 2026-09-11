@@ -6,7 +6,7 @@ class Node {
   }
 }
 
-export class BinarySearchTree {
+class BinarySearchTree {
   constructor() {
     this.root = null;
   }
@@ -117,6 +117,31 @@ export class BinarySearchTree {
     currentNode.right = null;
     return currentNode;
   }
+  breadthFirstSearch() {
+    //  BFS uses a stack and searches wide/across
+    let currentNode = this.root;
+    let list = [];
+    let queue = [];
+    queue.push(currentNode);
+    // Loop through the queue array
+    while (queue.length > 0) {
+      // shift() removes the first item of the array and returns it
+      // NOTE the queue could get quite large, which could increase the time complexity
+      currentNode = queue.shift();
+      // push to the removed item to the list
+      list.push(currentNode.value);
+      if (currentNode.left) {
+        queue.push(currentNode.left);
+      }
+      if (currentNode.right) {
+        queue.push(currentNode.right);
+      }
+      return list;
+      //      9
+      //   4       20
+      //1    6   15   170
+    }
+  }
 }
 
 const tree = new BinarySearchTree();
@@ -133,36 +158,6 @@ console.log("found::", tree.lookup(1));
 //       9
 //   4       20
 //1    6   15   170
-
-const r = {
-  left: {
-    value: 4,
-    left: {
-      value: 1,
-      left: null,
-      right: null,
-    },
-    right: {
-      value: 6,
-      left: null,
-      right: null,
-    },
-  },
-  right: {
-    value: 20,
-    left: {
-      value: 15,
-      left: null,
-      right: null,
-    },
-    right: {
-      value: 170,
-      left: null,
-      right: null,
-    },
-  },
-  value: 9,
-};
 
 function traverse2(node) {}
 

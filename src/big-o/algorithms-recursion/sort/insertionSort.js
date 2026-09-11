@@ -1,21 +1,6 @@
 const numbers = [8, 5, 2, 6, 9, 3, 1, 4, 0, 7];
 
-// function insertionSort(arr) {
-//   let activeIndex = 0;
-//   for (let i = 0; i < arr.length; i++) {
-//     activeIndex = i;
-//     for (let j = activeIndex - 1; j >= 0; j--) {
-//       if (arr[activeIndex] < arr[j]) {
-//         const smaller = arr[j];
-//         const bigger = arr[activeIndex];
-//         arr[activeIndex] = smaller;
-//         arr[j] = bigger;
-//         activeIndex = j;
-//         console.log(numbers);
-//       }
-//     }
-//   }
-// }
+// Use insetion sort if not many items and mostly sorted date
 
 function insertionSort(arr) {
   for (let i = 1; i < arr.length; i++) {

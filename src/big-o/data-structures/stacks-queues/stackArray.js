@@ -3,7 +3,8 @@ class Stack {
     this.stack = [];
   }
   // I need to use the array.pop() & array.push() which adds to the right side
-  // these are better than  unshift() and shift() because they are O(n) and JavaScript must reindex the remaining elements after these are used, whereas pop() and push() are O(1)
+  // these are better than  unshift() and shift() because they are O(n)
+  // and JavaScript must reindex the remaining elements after these are used, whereas pop() and push() are O(1)
   peek() {
     return this.stack[this.stack.length - 1];
   }
