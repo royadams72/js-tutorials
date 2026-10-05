@@ -1,33 +1,33 @@
-// function countDown(number) {
-//   if (number === 0) {
-//     return 0;
-//   }
-//   console.log(number);
+function countDown(number) {
+  if (number === 0) {
+    return 0;
+  }
+  console.log(number);
 
-//   return countDown(number - 1);
-// }
+  return countDown(number - 1);
+}
 
-// console.log(countDown(5));
+console.log(countDown(5));
 
-// function sumDown(number) {
-//   if (number === 1) {
-//     return 1;
-//   }
-//   console.log(number);
+function sumDown(number) {
+  if (number === 1) {
+    return 1;
+  }
+  console.log(number);
 
-//   return number + sumDown(number - 1);
-// }
+  return number + sumDown(number - 1);
+}
 
 // console.log(sumDown(5));
 
-// function multiplyDown(number) {
-//   if (number === 1) {
-//     return 1;
-//   }
-//   console.log(number);
+function multiplyDown(number) {
+  if (number === 1) {
+    return 1;
+  }
+  console.log(number);
 
-//   return number * multiplyDown(number - 1);
-// }
+  return number * multiplyDown(number - 1);
+}
 
 // console.log(multiplyDown(5));
 
@@ -72,20 +72,20 @@
 //   return num;
 // }
 
-// function sumArrayRecursive(arr) {
-//   // This pauses the functions until the array is empty
-//   if (arr.length === 0) {
-//     return 0;
-//   }
-//   // when the functions unpause they add the numbers together
-//   // sumArrayRecursive returns 0 when it reaches the base case
-//   // Then adds arr[0] to subsequent calls after
-//   // basically calls the function, then adds whats returned, this function can hold
-//   // returned properties in memory
-//   const answer = sumArrayRecursive(arr.slice(1)) + arr[0];
+function sumArrayRecursive(arr) {
+  // This pauses the functions until the array is empty
+  if (arr.length === 0) {
+    return 0;
+  }
+  // when the functions unpause they add the numbers together
+  // sumArrayRecursive returns 0 when it reaches the base case
+  // Then adds arr[0] to subsequent calls after
+  // basically calls the function, then adds whats returned, this function can hold
+  // returned properties in memory
+  const answer = sumArrayRecursive(arr.slice(1)) + arr[0];
 
-//   return answer;
-// }
+  return answer;
+}
 
 // console.log(sumArrayRecursive([2, 4, 6, 8, 6]));
 // console.log(sumArrayIterative([2, 4, 6, 8, 6]));
