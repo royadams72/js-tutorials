@@ -11,9 +11,7 @@ var intersection = function (nums1, nums2) {
       values.push(nums1[L]);
       L++;
       R++;
-    }
-
-    if (nums1[L] < nums2[R]) {
+    } else if (nums1[L] < nums2[R]) {
       L++;
     } else if (nums2[R] < nums1[L]) {
       R++;
