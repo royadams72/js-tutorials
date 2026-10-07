@@ -12,7 +12,6 @@ var removeElement = function (nums, val) {
       L++;
     }
   }
-  console.log(nums);
 
   return L;
 };

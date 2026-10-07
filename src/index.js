@@ -17,4 +17,4 @@
 // import "./big-o/data-structures/graphs/undirectedGraph.js";
 // import "./big-o/algorithms-recursion/recursion/fibonacci.js";
 // import "./big-o/algorithms-recursion/recursion/misc.js";
-import "./problems/arrays/easy/two-pointer/removeElement.js";
+import "./problems/arrays/easy/two-pointer/findValuesIn2Arrays.js";
